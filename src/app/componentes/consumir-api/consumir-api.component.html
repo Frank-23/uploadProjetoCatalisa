@@ -1,0 +1,16 @@
+<table class="table">
+  <tr>
+      <th class="th">  Estado (UF)   </th>
+      <th class="th">  Casos         </th>
+      <th class="th">  Mortes        </th>
+      <th class="th">  Suspeitos     </th>
+      <th class="th">  Recuperados   </th>
+  </tr>
+  <tr *ngFor="let lista of estados.data">
+      <td class="td">  {{  lista.state   }}    ( {{  lista.uf  }} )   </td>
+      <td class="td">  {{  lista.cases   }}  </td>
+      <td class="td">   {{  lista.deaths  }}  </td>
+      <td class="td">  {{  lista.suspects  }}  </td>
+      <td class="td">  {{ lista.refuses }} </td>
+  </tr>
+</table>

@@ -1,0 +1,9 @@
+<h3 class="h3"> Drag&Drop (Lista Ordenada) </h3>
+
+<div class="divPrincipal">
+  <div cdkDropList class="divCdkDropList" (cdkDropListDropped)="movimentar($event)"
+        cdkDragBoundary=".divPrincipal">
+      <div class="box" *ngFor="let curso of arrayCursos" cdkDrag>{{   curso   }}</div>
+  </div>
+</div>
+

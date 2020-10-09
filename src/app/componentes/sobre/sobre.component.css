@@ -1,0 +1,13 @@
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.divPrincipal {
+  margin-top: 50px;
+}
+
+a {
+  color: #0000ff;
+  font-weight: bold;
+}

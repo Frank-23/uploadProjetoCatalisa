@@ -1,0 +1,34 @@
+<div class="divPrincipal">
+    <form [formGroup]="painelCovid">
+          <fieldset class="grupo">
+            <div class="campo">
+                <label for="estado"> Estado </label>
+                <input formControlName="estado" type="text" name="estado" id="estado">
+            </div>
+            <div class="campo">
+                <label for="uf"> UF </label>
+                <input formControlName="uf" type="text" name="uf" id="uf">
+            </div>
+            <div class="campo">
+                <label for="numeroCasos"> Casos </label>
+                <input formControlName="casos" type="text" name="numeroCasos" id="numeroCasos">
+            </div>
+            <div class="campo">
+                <label for="numeroMortes"> Mortes </label>
+                <input formControlName="mortes" type="text" name="numeroMortes" id="numeroMortes">
+            </div>
+            <div class="campo">
+                <label for="casosSuspeitos"> Suspeitos </label>
+                <input formControlName="suspeitos" type="text" name="casosSuspeitos" id="casosSuspeitos">
+            </div>
+            <div class="campo">
+                <label for="numeroRecuperados"> Recuperados </label>
+                <input formControlName="recuperados" type="text" name="numeroRecuperados" id="numeroRecuperados">
+            </div>
+          </fieldset>
+
+          <button (click)="obterDadosFormulario()" type="submit" class="botaoEnviar"> Enviar </button>
+    </form>
+</div>
+<pre> {{ resultado | json }}</pre>
+
